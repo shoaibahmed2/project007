@@ -24,15 +24,14 @@ jobs:
       - uses: actions/checkout@v2
 
       # Runs a single command using the runners shell
-      - name: instal NodeJS
+      - name: install NodeJS
         uses: actions/setup-node@v2-beta
         with:
           node-version: 12
-        
       - name: install surge
         run: npm install -g surge
       - name: Run Surge
-        run: Surge ./ http://bootcamp007.surge.sh/ dbebdea6ed0a21d14bd265ebd8616465
+        run: Surge ./ bootcamp007.surge.sh/ dbebdea6ed0a21d14bd265ebd8616465
         
           
      
