@@ -28,11 +28,11 @@ jobs:
         uses: actions/setup-node@v2-beta
         with:
           node-version: 12  
-       # Runs a set of commands using the runners shell    
-      - name: install surge
-        run:  sudo npm install --global surge
-      - name: Run Surge
-        run: Surge ./ http://bootcamp007.surge.sh --token dbebdea6ed0a21d14bd265ebd8616465
+       # Runs a set of commands using the runners shell
+      - name: Installing Surge
+        run: sudo npm install --global surge
+      - name: deploying using surge
+        run: surge ./ http://bootcamp007.surge.sh/ --token dbebdea6ed0a21d14bd265ebd8616465
         
           
      
